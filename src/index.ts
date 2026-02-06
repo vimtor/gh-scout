@@ -7,7 +7,7 @@ import { formatPretty, formatJSON } from "./output";
 import type { ContributionData } from "./types";
 
 program
-  .name("mergerep")
+  .name("gh-scout")
   .description("GitHub contribution stats")
   .argument("[username]", "GitHub username (defaults to current PR author)")
   .option("--json", "Output as JSON")

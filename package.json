@@ -1,27 +1,28 @@
 {
-  "name": "mergerep",
+  "name": "gh-scout",
   "version": "0.1.2",
-  "description": "CLI for open-source contribution stats",
+  "description": "GitHub CLI extension for open-source contribution stats",
   "type": "module",
   "license": "MIT",
   "author": "vimtor",
-  "repository": "vimtor/mergerep",
+  "repository": "vimtor/gh-scout",
   "keywords": [
     "github",
     "merge-rate",
     "cli",
     "contributions",
-    "open-source"
+    "open-source",
+    "gh-extension"
   ],
   "files": [
     "src"
   ],
   "bin": {
-    "mergerep": "./src/index.ts"
+    "gh-scout": "./src/index.ts"
   },
   "scripts": {
     "test": "bun test",
-    "prepublishOnly": "bunx tsc --noEmit"
+    "build": "bun build src/index.ts --compile --outfile gh-scout"
   },
   "devDependencies": {
     "@types/bun": "latest",

@@ -1,25 +1,23 @@
-# mergerep
+# gh-scout
 
-CLI for checking a contributor's merge rates before wasting time on low quality LLM pull request.
+GitHub CLI extension for checking a contributor's open source merge rate before reviewing their PR.
 
 ## Install
 
 ```bash
-bun install -g mergerep
-npm install -g mergerep
-pnpm install -g mergerep
+gh extension install vimtor/gh-scout
 ```
 
-Requires [Bun](https://bun.sh/) and [GitHub CLI](https://cli.github.com/).
+Requires [GitHub CLI](https://cli.github.com/) (`gh`) authenticated.
 
 ## Usage
 
 ```bash
-mergerep <username>                  # Check user's merge rate
-mergerep                             # In PR branch, check PR author
-mergerep <username> --json           # JSON output
-mergerep <username> --issues         # Include issues
-mergerep <username> --repo org/name  # Highlight specific repo
+gh scout <username>                  # Check user's merge rate
+gh scout                             # In PR branch, check PR author
+gh scout <username> --json           # JSON output
+gh scout <username> --issues         # Include issues
+gh scout <username> --repo org/name  # Highlight specific repo
 ```
 
 ## Example

@@ -1,12 +1,12 @@
 ---
-name: mergerep
-description: Check a GitHub user's open source merge rate and contribution reputation. Use when reviewing a PR from an unknown contributor, asked to "check merge rate", "check contributor quality", "vet this PR author", or "run mergerep".
+name: gh-scout
+description: Check a GitHub user's open source merge rate and contribution reputation. Use when reviewing a PR from an unknown contributor, asked to "check merge rate", "check contributor quality", "vet this PR author", or "run gh-scout".
 metadata:
   author: vimtor
   version: "1.0.0"
 ---
 
-# mergerep
+# gh-scout
 
 Check a GitHub contributor's open source merge rate before reviewing their PR. Helps identify low-quality LLM-generated pull requests.
 
@@ -25,24 +25,24 @@ Requires [GitHub CLI](https://cli.github.com/) (`gh`) authenticated.
 
 ```bash
 # Check a specific user
-bunx mergerep <username>
+gh scout <username>
 
 # Auto-detect PR author (when run inside a PR branch)
-bunx mergerep
+gh scout
 
 # JSON output (for programmatic use)
-bunx mergerep <username> --json
+gh scout <username> --json
 
 # Include issue stats
-bunx mergerep <username> --issues
+gh scout <username> --issues
 
 # Highlight a specific repo in output
-bunx mergerep <username> --repo owner/name
+gh scout <username> --repo owner/name
 ```
 
 ## When to Use
 
-- **Reviewing a PR from an external contributor** — run `bunx mergerep <author>` to check their track record
+- **Reviewing a PR from an external contributor** — run `gh scout <author>` to check their track record
 - **Triaging incoming PRs** — quickly assess if a contributor has a history of merged contributions
 - **Comparing contributors** — use `--json` to programmatically compare multiple users
 
@@ -55,7 +55,7 @@ The tool outputs:
 
 ## Present Results to User
 
-When presenting mergerep output, summarize:
+When presenting gh-scout output, summarize:
 - The user's reputation score and what it indicates
 - Their overall merge rate
 - Notable repos they've contributed to

@@ -1,6 +1,6 @@
 # CLAUDE.md
 
-CLI tool showing GitHub user's open source contribution merge rate. Uses `gh` CLI for all GitHub API calls.
+GitHub CLI extension (`gh scout`) showing a user's open source contribution merge rate. Uses `gh` CLI for all GitHub API calls. Distributed as a gh extension with precompiled binaries.
 
 ## Architecture
 
@@ -23,5 +23,6 @@ CLI tool showing GitHub user's open source contribution merge rate. Uses `gh` CL
 ```bash
 bun test                    # run all tests
 bun test src/score.test.ts  # run single test file
-bun src/index.ts <username> # run CLI
+bun src/index.ts <username> # run CLI locally
+gh scout <username>         # run via gh extension
 ```
