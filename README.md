@@ -24,7 +24,7 @@ gh vet <username> --repo org/name  # Highlight specific repo
     
 ## Skill
 
-Also available as an [skill](https://skills.sh). When installed, your AI agent will vet PR authors when asked to review a PR.
+Also available as an [skill](https://skills.sh). Once installed, your AI agent will vet PR authors when asked to review a PR.
 
 ```bash
 npx skills add vimtor/gh-vet
