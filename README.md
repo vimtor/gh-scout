@@ -1,13 +1,6 @@
-<div align='center'>
-    <br/>
-    <br/>
-    <h3>mergerep</h3>
-    <p>CLI for open-source contribution stats</p>
-    <br/>
-    <br/>
-</div>
+# mergerep
 
-Check a contributor's merge rates before wasting time on a LLM slop pull request.
+CLI for checking a contributor's merge rates before wasting time on low quality LLM pull request.
 
 ## Install
 
@@ -32,6 +25,13 @@ mergerep <username> --repo org/name  # Highlight specific repo
 ## Example
 
 <img src="example.png" alt="rauchg example output" width="70%" height="auto">
+
+## Motivation
+
+Given the rise of agentic coding, many open source mantainers have complained about the influx of low quality pull requests from external contributors:
+
+- [tldraw closing pull requests from external contributors](https://x.com/tldraw/status/2011911073834672138)
+- [@NathanFlurry's tweet](https://x.com/NathanFlurry/status/2018934424218587209)
 
 ## License
 
