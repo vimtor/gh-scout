@@ -1,11 +1,11 @@
-# gh-scout
+# gh-vet
 
 GitHub CLI extension for checking a contributor's open source merge rate before reviewing their PR.
 
 ## Install
 
 ```bash
-gh extension install vimtor/gh-scout
+gh extension install vimtor/gh-vet
 ```
 
 Requires [GitHub CLI](https://cli.github.com/) (`gh`) authenticated.
@@ -13,11 +13,11 @@ Requires [GitHub CLI](https://cli.github.com/) (`gh`) authenticated.
 ## Usage
 
 ```bash
-gh scout <username>                  # Check user's merge rate
-gh scout                             # In PR branch, check PR author
-gh scout <username> --json           # JSON output
-gh scout <username> --issues         # Include issues
-gh scout <username> --repo org/name  # Highlight specific repo
+gh vet <username>                  # Check user's merge rate
+gh vet                             # In PR branch, check PR author
+gh vet <username> --json           # JSON output
+gh vet <username> --issues         # Include issues
+gh vet <username> --repo org/name  # Highlight specific repo
 ```
 
 ## Example

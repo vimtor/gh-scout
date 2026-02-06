@@ -1,12 +1,12 @@
 ---
-name: gh-scout
-description: Check a GitHub user's open source merge rate and contribution score. Use when reviewing a PR from an unknown contributor, asked to "check merge rate", "check contributor quality", "vet this PR author", or "run gh-scout".
+name: gh-vet
+description: Check a GitHub user's open source merge rate and contribution score. Use when reviewing a PR from an unknown contributor, asked to "check merge rate", "check contributor quality", "vet this PR author", or "run gh-vet".
 metadata:
   author: vimtor
   version: "1.0.0"
 ---
 
-# gh-scout
+# gh-vet
 
 Check a GitHub contributor's open source merge rate before reviewing their PR. Helps identify low-quality LLM-generated pull requests.
 
@@ -25,24 +25,24 @@ Requires [GitHub CLI](https://cli.github.com/) (`gh`) authenticated.
 
 ```bash
 # Check a specific user
-gh scout <username>
+gh vet <username>
 
 # Auto-detect PR author (when run inside a PR branch)
-gh scout
+gh vet
 
 # JSON output (for programmatic use)
-gh scout <username> --json
+gh vet <username> --json
 
 # Include issue stats
-gh scout <username> --issues
+gh vet <username> --issues
 
 # Highlight a specific repo in output
-gh scout <username> --repo owner/name
+gh vet <username> --repo owner/name
 ```
 
 ## When to Use
 
-- **Reviewing a PR from an external contributor** — run `gh scout <author>` to check their track record
+- **Reviewing a PR from an external contributor** — run `gh vet <author>` to check their track record
 - **Triaging incoming PRs** — quickly assess if a contributor has a history of merged contributions
 - **Comparing contributors** — use `--json` to programmatically compare multiple users
 
@@ -55,7 +55,7 @@ The tool outputs:
 
 ## Present Results to User
 
-When presenting gh-scout output, summarize:
+When presenting gh-vet output, summarize:
 - The user's score score and what it indicates
 - Their overall merge rate
 - Notable repos they've contributed to

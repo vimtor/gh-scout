@@ -1,11 +1,11 @@
 {
-  "name": "gh-scout",
+  "name": "gh-vet",
   "version": "0.1.2",
   "description": "GitHub CLI extension for open-source contribution stats",
   "type": "module",
   "license": "MIT",
   "author": "vimtor",
-  "repository": "vimtor/gh-scout",
+  "repository": "vimtor/gh-vet",
   "keywords": [
     "github",
     "merge-rate",
@@ -18,11 +18,11 @@
     "src"
   ],
   "bin": {
-    "gh-scout": "./src/index.ts"
+    "gh-vet": "./src/index.ts"
   },
   "scripts": {
     "test": "bun test",
-    "build": "bun build src/index.ts --compile --outfile gh-scout"
+    "build": "bun build src/index.ts --compile --outfile gh-vet"
   },
   "devDependencies": {
     "@types/bun": "latest",

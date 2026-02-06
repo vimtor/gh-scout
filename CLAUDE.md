@@ -1,6 +1,6 @@
 # CLAUDE.md
 
-GitHub CLI extension (`gh scout`) showing a user's open source contribution merge rate. Uses `gh` CLI for all GitHub API calls. Distributed as a gh extension with precompiled binaries.
+GitHub CLI extension (`gh vet`) showing a user's open source contribution merge rate. Uses `gh` CLI for all GitHub API calls. Distributed as a gh extension with precompiled binaries.
 
 ## Architecture
 
@@ -24,5 +24,5 @@ GitHub CLI extension (`gh scout`) showing a user's open source contribution merg
 bun test                    # run all tests
 bun test src/score.test.ts  # run single test file
 bun src/index.ts <username> # run CLI locally
-gh scout <username>         # run via gh extension
+gh vet <username>         # run via gh extension
 ```
