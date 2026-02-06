@@ -1,6 +1,6 @@
 {
   "name": "gh-vet",
-  "version": "0.1.2",
+  "version": "0.1.0",
   "description": "GitHub CLI extension for open-source contribution stats",
   "type": "module",
   "license": "MIT",
