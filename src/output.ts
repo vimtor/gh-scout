@@ -26,7 +26,7 @@ export function formatPretty(
       ? Math.round((issues.closed / issues.opened) * 100)
       : 0;
 
-  let output = `${pc.bold(pc.cyan(username))}${since ? pc.dim(` (from ${formatDate(since)})`) : ""}
+  let output = `${pc.bold(pc.cyan(username))}${since ? pc.dim(` (since ${formatDate(since)})`) : ""}
 
 ${pc.bold("Reputation:")} ${colorRate(reputation)} ${pc.dim(`(% of merged stars)`)}
 
