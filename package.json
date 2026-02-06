@@ -1,0 +1,30 @@
+{
+  "name": "mergerep",
+  "version": "0.1.0",
+  "description": "GitHub contribution merge rate CLI",
+  "type": "module",
+  "license": "MIT",
+  "author": "vimtor",
+  "repository": "vimtor/mergerep",
+  "keywords": ["github", "merge-rate", "cli", "contributions", "open-source"],
+  "files": ["src"],
+  "bin": {
+    "mergerep": "./src/index.ts"
+  },
+  "scripts": {
+    "test": "bun test",
+    "prepublishOnly": "bunx tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@clack/prompts": "^1.0.0",
+    "commander": "^14.0.3",
+    "ora": "^9.3.0",
+    "picocolors": "^1.1.1"
+  }
+}
