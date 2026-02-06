@@ -29,6 +29,14 @@ Many open source maintainers are complaining about the influx of low-quality PRs
 - [tldraw closing pull requests from external contributors](https://x.com/tldraw/status/2011911073834672138)
 - [this tweet from @NathanFlurry](https://x.com/NathanFlurry/status/2018934424218587209)
 
+## Skill
+
+Available as an [agent skill](https://skills.sh). When installed, your AI agent will automatically vet PR authors when asked to review a PR.
+
+```bash
+npx skills add vimtor/gh-vet
+```
+
 ## License
 
 [MIT](LICENSE)
